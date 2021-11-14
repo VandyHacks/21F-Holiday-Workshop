@@ -5,3 +5,5 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
         chrome.tabs.executeScript(null, {file: "./content.js"}, () => console.log("content.js injected"));
     }
 });
+
+//TODO: Handle get/set for options, handle get/set for popup
