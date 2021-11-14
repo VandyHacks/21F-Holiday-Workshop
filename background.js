@@ -1,5 +1,7 @@
 console.log("Hello, world!")
 
-chrome.tabs.onActivated.addListener(tab => {
-    chrome.tabs.executeScript(null, {file: "./content.js"}, () => console.log("content.js injected"));
+chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
+    if (changeInfo.status === 'complete') {
+        chrome.tabs.executeScript(null, {file: "./content.js"}, () => console.log("content.js injected"));
+    }
 });
