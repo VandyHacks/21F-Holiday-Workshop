@@ -3,7 +3,7 @@ document.querySelectorAll('img').forEach(el => {
     let height = getComputedStyle(el).height;
     if (width > height) {
         el.style.width = width;
-        el.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Jonathan_G_Meath_portrays_Santa_Claus.jpg/171px-Jonathan_G_Meath_portrays_Santa_Claus.jpg';
+        el.src = 'https://upload.wikimedia.org/wikipedia/en/thumb/a/af/Xmas_2009.JPG/320px-Xmas_2009.JPG';
     } else {
         el.style.height = height;
         el.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Jonathan_G_Meath_portrays_Santa_Claus.jpg/171px-Jonathan_G_Meath_portrays_Santa_Claus.jpg';
