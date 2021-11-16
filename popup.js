@@ -1,5 +1,5 @@
 window.onload = () => {
-    chrome.storage.sync.get(["replaceImages", "replaceWords", "santaVertical", "santaHorizontal"], options => {
+    chrome.storage.sync.get(["replaceImages", "santaURL"], options => {
         document.getElementById("replaceImages").checked = options.replaceImages;
         document.getElementById("santaURL").value = options.santaURL;
     });
