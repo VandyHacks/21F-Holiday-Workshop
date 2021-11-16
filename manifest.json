@@ -20,6 +20,6 @@
         "tabs",
         "http://*/*",
         "https://*/*",
-        "storage"]
-    
+        "storage"
+    ]
 }

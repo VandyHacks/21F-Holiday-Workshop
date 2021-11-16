@@ -6,4 +6,9 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
     }
 });
 
-//TODO: Handle get/set for options, handle get/set for popup
+chrome.runtime.onInstalled.addListener(() => {
+    chrome.storage.sync.set({
+        "replaceImages": true,
+        "santaURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Jonathan_G_Meath_portrays_Santa_Claus.jpg/171px-Jonathan_G_Meath_portrays_Santa_Claus.jpg",
+    });
+});
